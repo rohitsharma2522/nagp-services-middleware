@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+option java_package = "com.nagarro.assignment.grpc";
+
+service OrderService {
+  rpc PlaceOrder(OrderRequest) returns (OrderResponse);
+  rpc UpdateOrder(OrderUpdateRequest) returns (OrderUpdateResponse);
+}
+
+message OrderRequest {
+  int32 id = 1;
+  string product = 2;
+  string description = 3;
+  string color = 4;
+  uint64 price = 5;
+  string status = 6;
+}
+
+message OrderResponse {
+  int32 statusCode = 1;
+  string message = 2;
+}
+
+message OrderUpdateRequest {
+    string status = 2;
+}
+
+message OrderUpdateResponse {
+  int32 statusCode = 1;
+  string message = 2;
+}

@@ -1,0 +1,17 @@
+[{
+		"id":1,
+		"product": "Shoes",
+		"description" : "Sports Shoes",
+		"color": "black",
+		"price": 2000
+	
+	},{
+	
+		"id":2,
+		"product": "Apparel",
+		"description" : "T-shirt",
+		"color": "blue",
+		"price": 1200
+	
+	}]
+
